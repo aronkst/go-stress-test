@@ -39,6 +39,6 @@ Substitua `<URL_DO_SERVIÇO>`, `<NÚMERO_DE_REQUESTS>` e `<CHAMADAS_SIMULTÂNEAS
 - `cmd/stresstest/main.go`: Contém a lógica principal do CLI.
 - `internal/stresstest/usecase/stresstest_usecase.go`: Implementação do caso de uso para realizar testes de carga.
 
-## Observation
+## Observação
 
 - O retorno do relatório está em inglês.
