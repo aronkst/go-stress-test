@@ -32,6 +32,6 @@ func main() {
 	fmt.Printf("- Number of Requests with Status 200: %d\n", report.SuccessfulRequests)
 
 	for code, count := range report.ErrorStatusCodes {
-		fmt.Printf("- Status Code %d:                     %d\n", code, count)
+		fmt.Printf("- Status Code %d:                    %d\n", code, count)
 	}
 }

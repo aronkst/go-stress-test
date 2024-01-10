@@ -1,7 +1,6 @@
 package usecase
 
 import (
-	"fmt"
 	"net/http"
 	"sync"
 	"time"
@@ -28,11 +27,7 @@ func ExecuteStressTest(url string, requests int, concurrency int) Report {
 		client := http.Client{Timeout: time.Second * 10}
 
 		for i := 0; i < requests/concurrency; i++ {
-			resp, err := client.Get(url)
-			if err != nil {
-				fmt.Println("Error when making the request:", err)
-				continue
-			}
+			resp, _ := client.Get(url)
 
 			if resp.StatusCode == http.StatusOK {
 				successCount++
