@@ -1,44 +1,40 @@
 # Go StressTest
 
-Este é um CLI em Go para realizar testes de carga em um serviço web.
+This is a Go CLI for performing load tests on a web service.
 
-## Pré-requisitos
+## Prerequisites
 
-Certifique-se de ter o Docker instalado no seu sistema. Você pode baixar e instalar o Docker a partir do [site oficial do Docker](https://www.docker.com/).
+Make sure you have Docker installed on your system. You can download and install Docker from the [official Docker website](https://www.docker.com/).
 
-## Uso com Docker
+## Usage with Docker
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/aronkst/go-stress-test.git
+git clone https://github.com/user/project.git
 ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
 
 ```bash
 cd go-stress-test
 ```
 
-3. Construa a imagem Docker:
+3. Build the Docker image:
 
 ```bash
 docker build -t go-stress-test .
 ```
 
-4. Execute o CLI usando Docker, com os parâmetros desejados:
+4. Run the CLI using Docker, with the desired parameters:
 
 ```bash
-docker run --rm go-stress-test --url <URL_DO_SERVIÇO> --requests <NÚMERO_DE_REQUESTS> --concurrency <CHAMADAS_SIMULTÂNEAS>
+docker run --rm go-stress-test --url <SERVICE_URL> --requests <NUMBER_OF_REQUESTS> --concurrency <SIMULTANEOUS_CALLS>
 ```
 
-Substitua `<URL_DO_SERVIÇO>`, `<NÚMERO_DE_REQUESTS>` e `<CHAMADAS_SIMULTÂNEAS>` pelos valores desejados.
+Replace `<SERVICE_URL>`, `<NUMBER_OF_REQUESTS>`, and `<SIMULTANEOUS_CALLS>` with the desired values.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `cmd/stresstest/main.go`: Contém a lógica principal do CLI.
-- `internal/stresstest/usecase/stresstest_usecase.go`: Implementação do caso de uso para realizar testes de carga.
-
-## Observação
-
-- O retorno do relatório está em inglês.
+- `cmd/stresstest/main.go`: Contains the main logic of the CLI.
+- `internal/stresstest/usecase/stresstest_usecase.go`: Implementation of the use case for performing load tests.
