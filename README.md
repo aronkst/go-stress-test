@@ -11,7 +11,7 @@ Make sure you have Docker installed on your system. You can download and install
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/user/project.git
+git clone https://github.com/aronkst/go-stress-test.git
 ```
 
 2. Navigate to the project directory:
