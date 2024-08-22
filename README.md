@@ -1,4 +1,4 @@
-# Go StressTest
+# Go Stress Test
 
 This is a Go CLI for performing load tests on a web service.
 
